@@ -162,6 +162,8 @@ def main():
            print("Your health dropped below 1.  You have died!")
         elif room > 5:
            print("You made it through all 5 rooms of the dungeon!")
+        elif room < 6:
+           print(f"You made it to room {room}.")
 
         for item in player['inventory']:
             if item in treasures:
